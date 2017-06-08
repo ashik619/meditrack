@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e5368</color>
+    <color name="colorPrimaryDark">#004055</color>
+    <color name="colorAccent">#a7072d</color>
+
+    <color name="dialog_disabled">#D34938</color>
+    <color name="dialog_nrml">#F2780B</color>
+    <color name="dialog_pressed">#7F2E23</color>
+
+    <color name="search_bg">#ab57676e</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="red">#c63c50</color>
+    <color name="more_screen">#f4f4f4</color>
+
+    <color name="whiteTransparent">#fff</color>
+
+    <color name="textBlack">#353131</color>
+    <color name="textDarkPrimary">#585656</color>
+    <color name="textDarkSecondary">#757575</color>
+    <color name="textLightPrimary">#f2f2f2</color>
+    <color name="textLightSecondary">#c1c1c1</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="bottombar_tab_pressed">#a7072d</color>
+    <color name="secondaryColor">#c63c50</color>
+    <color name="secondaryButtonNrml">#b54754</color>
+    <color name="secondaryButtonPressed">#903843</color>
+
+    <color name="textColor">#7b7272</color>
+
+    <color name="card_color">#f4f2f3</color>
+    <color name="screen_bg">#e8e8e8</color>
+
+    <color name="intro_back">#f4f2f3</color>
+
+    <color name="lowopacityPrimaryColor">#932c5368</color>
+
+    <color name="blueLight">#01AFED</color>
+    <color name="blueLightMid">#008cbd</color>
+    <color name="blueLightDark">#0176EB</color>
+    <color name="blueDisabled">#80baf5</color>
+    <color name="blueLightDarker">#003b75</color>
+    <color name="box_color">#D9D9D9</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+
+                <com.ashik619.meditrack.custom_view.CustomTextView
+                    android:id="@+id/sosBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="SOS"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/sos_bg"
+                    app:custom_font_tv="bold"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="17dp" />
+                <com.ashik619.meditrack.custom_view.CustomEditText
+                    android:id="@+id/searchText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/text_box_bg"
+                    android:gravity="center"
+                    android:hint="Search"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="?attr/actionBarSize"></FrameLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:bb_activeTabColor="@color/secondaryColor"
+        app:bb_inActiveTabColor="#f3919090"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottom_bar_tabs" />
+
+</android.support.design.widget.CoordinatorLayout>

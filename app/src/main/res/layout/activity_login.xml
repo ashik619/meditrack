@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ashik619.meditrack.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.ashik619.meditrack.custom_view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_font_tv="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Login"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+        <com.ashik619.meditrack.custom_view.CustomEditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter  Name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textLightSecondary"
+            android:textSize="@dimen/normalText" />
+
+        <com.ashik619.meditrack.custom_view.CustomEditText
+            android:id="@+id/quantiyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter age"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textLightSecondary"
+            android:textSize="@dimen/normalText" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Continue"
+            android:id="@+id/craeteBtn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normalText"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/primary_round_button_click"/>
+    </LinearLayout>
+
+</RelativeLayout>

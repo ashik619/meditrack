@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_home"
+        id="@+id/home1"
+        title="Home" />
+    <tab
+        icon="@drawable/ic_assignment"
+        id="@+id/medicines"
+        title="Medicines" />
+    <tab
+        icon="@drawable/ic_settings"
+        id="@+id/settings"
+        title="Settings" />
+</tabs>
